@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real Estate Website Landing Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+        body {
+            font-family: "Roboto", "Helvetica", "Sans-serif";
+            margin: 0;
+            padding: 0;
+            font-size: 1rem;
+            font-weight: 400;
+            color: #777;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1140px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-family: "Playfair Display", serif;
+            font-weight: 800;
+            font-size: 2.5rem;
+            color: #f69314;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        button.rounded {
+            background: #f69314;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 30px;
+            padding: 10px 30px;
+            line-height: 1.5;
+            cursor: pointer;
+            display: block;
+            margin: 2rem auto 0;
+            width: 350px;
+        }
+
+        #properties {
+            margin: 4rem 0 8rem;
+            position: relative;
+        }
+
+        #properties .container {
+            position: relative;
+        }
+
+        #properties-slider {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #properties-slider > div {
+            width: 30%;
+            margin-bottom: 2rem;
+        }
+
+        #properties-slider img {
+            width: 100%;
+            display: block;
+        }
+
+        .property-details {
+            padding: 1rem;
+        }
+
+        .property-details .price {
+            font-size: 1.2rem;
+            color: #343a40;
+            font-weight: 800;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .property-details span {
+            font-size: 0.8rem;
+            padding-right: 15px;
+        }
+
+        .property-details span.baths {
+            padding-left: 10px;
+        }
+
+        .property-details span.sqft {
+            padding-right: 0;
+            padding-left: 10px;
+        }
+
+        .property-details span.beds,
+        .property-details span.baths {
+            border-right: 1px solid #888;
+        }
+
+        .property-details address {
+            font-size: 0.8rem;
+            font-style: normal;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 991px) {
+            #properties-slider > div {
+                width: 48%;
+            }
+        }
+
+        @media (max-width: 767px) {
+            h2 {
+                font-size: 1.75rem;
+            }
+
+            #properties-slider > div {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<section id="properties">
+    <div class="container">
+        <h2>Properties</h2>
+        <div id="properties-slider" class="slick">
+            <div>
+                <img src="san.jpg" alt="Property 1" />
+                <div class="property-details">
+                    <p class="price">$4,400,000</p>
+                    <span class="beds">8 beds</span>
+                    <span class="baths">6 baths</span>
+                    <span class="sqft">4,000 sqft.</span>
+                    <address>
+                        490 11th, Unit 24, San Francisco, CA
+                    </address>
+                </div>
+            </div>
+
+            <div>
+                <img src="san1.jpg" alt="Property 2" />
+                <div class="property-details">
+                    <p class="price">$2,800,000</p>
+                    <span class="beds">4 beds</span>
+                    <span class="baths">4 baths</span>
+                    <span class="sqft">4,250 sqft.</span>
+                    <address>
+                        420 18th, Unit 6, San Francisco, CA
+                    </address>
+                </div>
+            </div>
+
+            <div>
+                <img src="san2.jpg" alt="Property 3" />
+                <div class="property-details">
+                    <p class="price">$3,820,000</p>
+                    <span class="beds">6 beds</span>
+                    <span class="baths">4 baths</span>
+                    <span class="sqft">3,950 sqft.</span>
+                    <address>
+                        520 16th, Unit 16, San Francisco, CA
+                    </address>
+                </div>
+            </div>
+
+            <div>
+                <img src="san5.jpg" alt="Property 3" />
+                <div class="property-details">
+                    <p class="price">$4,520,000</p>
+                    <span class="beds">8 beds</span>
+                    <span class="baths">6 baths</span>
+                    <span class="sqft">4,950 sqft.</span>
+                    <address>
+                        120 15th, Unit 13, San Francisco, CA
+                    </address>
+                </div>
+            </div>
+
+            <div>
+                <img src="san3.jpg" alt="Property 4" />
+                <div class="property-details">
+                    <p class="price">$4,400,000</p>
+                    <span class="beds">8 beds</span>
+                    <span class="baths">6 baths</span>
+                    <span class="sqft">5,250 sqft.</span>
+                    <address>
+                        620 12th, Unit 20, San Francisco, CA
+                    </address>
+                </div>
+            </div>
+
+            <div>
+                <img src="san4.jpg" alt="Property 5" />
+                <div class="property-details">
+                    <p class="price">$4,000,000</p>
+                    <span class="beds">6 beds</span>
+                    <span class="baths">4 baths</span>
+                    <span class="sqft">4,950 sqft.</span>
+                    <address>
+                        400 12th, Unit 11, San Francisco, CA
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html" class="rounded">Back to Home</a>
+    </div>
+</section>
+</body>
+</html>

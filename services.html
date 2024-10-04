@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Real Estate Website Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="styles.css" type="text/css" rel="Stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/95dc93da07.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <style>
+      /* Importing fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Roboto&display=swap');
+
+/* Global styles */
+body {
+    font-family: "Roboto", "Helvetica", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.7;
+}
+
+* {
+    outline: none;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #f69314;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.services-card-right {
+    margin-left: 20px;
+}
+
+.services-card-right h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.services-card-right p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.services-card-right a {
+    color: #f69314;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.services-card-right a:hover {
+    color: #222;
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+
+    .flex > div {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .services-card-right h3 {
+        font-size: 1.5rem;
+    }
+
+    .services-card-right p {
+        font-size: 0.9rem;
+    }
+}
+</style></head>
+<body>
+<!-- Back button -->
+<a href="index.html" class="back-button">&lt; Back to Home</a>
+
+<section id="services">
+  <div class="container">
+      <h2>Services</h2>
+      <div class="flex">
+          <div>
+              <div class="fas fa-home"></div>
+              <div class="services-card-right">
+                  <h3>Search Property</h3>
+                  <p>Our website offers an advanced property search feature that allows users to find properties that meet their specific criteria quickly and efficiently.</p>
+                  <a href="#">Learn More</a>
+              </div>
+          </div>
+
+          <div>
+              <div class="fas fa-dollar-sign"></div>
+              <div class="services-card-right">
+                  <h3>Buy Property</h3>
+                  <p>Our platform simplifies the process of buying properties, providing a comprehensive range of tools and resources to facilitate informed decisions.</p>
+                  <a href="#">Learn More</a>
+              </div>
+          </div>
+
+          <div>
+              <div class="fas fa-chart-line"></div>
+              <div class="services-card-right">
+                  <h3>Investing</h3>
+                  <p>Our website caters to real estate investors by providing detailed insights, analytics, and tools for making profitable investment decisions.</p>
+                  <a href="#">Learn More</a>
+              </div>
+          </div>
+
+          <div>
+              <div class="fas fa-building"></div>
+              <div class="services-card-right">
+                  <h3>List a Property</h3>
+                  <p>Property owners and real estate agents can list properties for sale or rent easily on our platform, reaching a wide audience of potential buyers and renters.</p>
+                  <a href="#">Learn More</a>
+              </div>
+          </div>
+
+          <div>
+              <div class="fas fa-search"></div>
+              <div class="services-card-right">
+                  <h3>Property Locator</h3>
+                  <p>The Property Locator feature helps users find properties that meet their exact needs using geolocation and advanced search technologies.</p>
+                  <a href="#">Learn More</a>
+              </div>
+          </div>
+
+         
+      </div>
+  </div>
+</section>
+
+</body>
+</html>
